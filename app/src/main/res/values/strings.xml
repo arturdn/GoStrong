@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">goStrong</string>
+
+    <string name="animacio">Animación</string>
+    <string name="entrenamiento">training</string>
+    <string name="historial">history</string>
+    <string name="avatar">avatar</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_principal">principal</string>
+    <string name="title_activity_musculs">Musculs</string>
+    <string name="title_activity_exercicis">Exercicis</string>
+    <string name="title_activity_nou_exercici">Nou Exercici</string>
+    <string name="title_activity_historial_exercici">Historial Exercici</string>
+    <string name="title_activity_avatar">Avatar</string>
+    <string name="pectoral">Pectorales</string>
+    <string name="triceps">Triceps</string>
+    <string name="esquena">Espalda</string>
+    <string name="biceps">Biceps</string>
+    <string name="hombros">Hombros</string>
+    <string name="trapeci">Trapecio</string>
+    <string name="abdominals">Abdominales</string>
+    <string name="cames">Piernas</string>
+    <string name="title_activity_bd">Bd</string>
+    <string name="menu_bd">ver bbdd</string>
+    <string name="menu_delete_bd">borrar bbdd</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="numRecords">"Número fichas: "</string>
+    <string name="difLevel">"Nivel de Dificultad: "</string>
+
+    <string-array name="muscles_array">
+        <item>Abdominales</item>
+        <item>Biceps</item>
+        <item>Espalda</item>
+        <item>Hombros</item>
+        <item>Pectorales</item>
+        <item>Piernas</item>
+        <item>Trapecio</item>
+        <item>Triceps</item>
+    </string-array>
+</resources>

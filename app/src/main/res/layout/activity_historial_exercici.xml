@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mycompany.gostrong.HistorialExercici">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercici"
+        android:id="@+id/nom_exercici"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivel de Dificultad:"
+        android:id="@+id/nivel_txt"
+        android:layout_marginRight="27dp"
+        android:layout_below="@+id/nom_exercici"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/3"
+        android:id="@+id/nivel"
+        android:textSize="25dp"
+        android:layout_below="@+id/nivel_txt"
+        android:layout_alignLeft="@+id/nivel_txt"
+        android:layout_alignStart="@+id/nivel_txt"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:id="@+id/fecha_txt"
+        android:layout_below="@+id/nivel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="136dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeticiones"
+        android:id="@+id/repeticiones_txt"
+        android:layout_alignBottom="@+id/fecha_txt"
+        android:layout_toRightOf="@+id/nom_exercici"
+        android:layout_toEndOf="@+id/nom_exercici" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        android:id="@+id/peso_txt"
+        android:layout_alignBottom="@+id/repeticiones_txt"
+        android:layout_alignRight="@+id/nivel_txt"
+        android:layout_alignEnd="@+id/nivel_txt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record Personal:"
+        android:id="@+id/record_txt"
+        android:textSize="18dp"
+        android:layout_below="@+id/nivel"
+        android:layout_alignLeft="@+id/nivel_txt"
+        android:layout_alignStart="@+id/nivel_txt"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20kg * 12repeticiones"
+        android:id="@+id/record"
+        android:layout_below="@+id/record_txt"
+        android:layout_alignLeft="@+id/record_txt"
+        android:layout_alignStart="@+id/record_txt" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/nom_exercici"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/exemple_exercici"
+        android:layout_above="@+id/repeticiones_txt"
+        android:layout_toLeftOf="@+id/nivel_txt"
+        android:layout_toStartOf="@+id/nivel_txt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fecha1"
+        android:id="@+id/fecha"
+        android:layout_below="@+id/peso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:id="@+id/repeticiones"
+        android:layout_alignTop="@+id/fecha"
+        android:layout_alignRight="@+id/repeticiones_txt"
+        android:layout_alignEnd="@+id/repeticiones_txt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 KG"
+        android:id="@+id/peso"
+        android:layout_below="@+id/peso_txt"
+        android:layout_alignRight="@+id/peso_txt"
+        android:layout_alignEnd="@+id/peso_txt"
+        android:layout_marginTop="66dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="up"
+        android:id="@+id/up"
+        android:onClick="up"
+        android:layout_below="@+id/fecha"
+        android:layout_toRightOf="@+id/fecha_txt"
+        android:layout_toEndOf="@+id/fecha_txt"
+        android:layout_marginTop="94dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="down"
+        android:id="@+id/down"
+        android:onClick="down"
+        android:layout_alignTop="@+id/up"
+        android:layout_alignRight="@+id/peso"
+        android:layout_alignEnd="@+id/peso" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="content"
+        android:id="@+id/numRecords"
+        android:minWidth="300dp"
+        android:editable="false"
+        android:clickable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/fecha"
+        android:layout_toEndOf="@+id/fecha" />
+
+
+</RelativeLayout>

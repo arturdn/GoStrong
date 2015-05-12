@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.mycompany.gostrong.Principal">
+    <!--<item android:id="@+id/action_settings" android:title="@string/action_settings"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_entrenamiento"
+        android:icon="@drawable/anadir_icono"
+        android:title="@string/entrenamiento"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_historial"
+        android:icon="@drawable/historial_icono"
+        android:title="@string/historial"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_avatar"
+        android:icon="@drawable/avatar_icono"
+        android:title="@string/avatar"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_bd"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:title="@string/menu_bd"/>
+    <item
+        android:id="@+id/menu_delete_bd"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        android:title="@string/menu_delete_bd"/>
+</menu>

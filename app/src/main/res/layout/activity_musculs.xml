@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mycompany.gostrong.Musculs"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/Pectorales"
+        android:src="@drawable/pectorales"
+        android:cropToPadding="false" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/Triceps"
+        android:src="@drawable/triceps"
+        android:layout_below="@+id/Pectorales" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/Espalda"
+        android:src="@drawable/espalda"
+        android:layout_below="@+id/Triceps"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/Biceps"
+        android:src="@drawable/biceps"
+        android:layout_below="@+id/Espalda"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/Hombros"
+        android:src="@drawable/hombros"
+        android:layout_below="@+id/Biceps"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/Trapecio"
+        android:src="@drawable/trapecio"
+        android:layout_below="@+id/Hombros"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/Abdominales"
+        android:src="@drawable/abdominales"
+        android:layout_below="@+id/Trapecio"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/Piernas"
+        android:src="@drawable/piernas"
+        android:layout_below="@+id/Abdominales"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
